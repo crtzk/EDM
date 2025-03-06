@@ -7,5 +7,4 @@ I'm Khim V. Cortez. I am currently studying at City College of Angeles under the
 - HIgh School: Republic Central Colleges
 - Elementary: Sto. Rosario Elementary School
 # My Projects
-- Midterm Lab Task 1: [Data Cleaning and Preparation using EXCEL](Midterm%20Task%201/README.md)
-- Midterm Lab Task 2: [Data Cleaning and Preparation using POWER QUERY](https://arshpatchak.github.io/testCodes/)
+- Midterm Lab Task 1: [Data Cleaning and Preparation](Midterm%20Task%201/README.md)
