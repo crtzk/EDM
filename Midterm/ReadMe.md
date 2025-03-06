@@ -13,6 +13,7 @@ For this task we are given a Flat data from Excel (See rawfile) and we are Task 
 - Mapped the Normalized tables as a Physical Data Model
 ## STEP 3 Here's the screenshot of my output before I started data cleaning (See screenshot)
 <img src="images/1.JPG" alt="Alt Text" width="400" height="300">
+![image](https://github.com/user-attachments/assets/4dd45439-e943-46ba-b85b-3f92af41fab3)
 
 ## STEP 4 Here's the screenshot of my output after I started data cleaning (See screenshot)
 ![Sample Output](images/1.JPG)
