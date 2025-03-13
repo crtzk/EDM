@@ -1,7 +1,7 @@
 # EDM
 This portfolio contains copies of my activities.
 # About Me
-I'm Khim V. Cortez. I am currently studying at City College of Angeles under the course of Bachelor of Science in Information System.
+I'm Khim V. Cortez. I am currently studying in City College of Angeles under the course of Bachelor of Science in Information System.
 # Education
 - College: City College of Angeles
 - HIgh School: Republic Central Colleges
