@@ -1,5 +1,5 @@
 # Midterm Lab Task 2 – Data Cleaning and Transformation Using Power Query Editor
-For this task, we are provided with an Uncleaned_DS_jobs.csv dataset (from Kaggle) and tasked with performing data cleaning and transformation using Power Query Editor in Excel to generate meaningful insights.
+We did this task, we are provided with an Uncleaned_DS_jobs.csv dataset (from Kaggle) and tasked with performing data cleaning and transformation using Power Query Editor in Excel to generate meaningful insights.
 ## STEP 1 – Data Cleaning Process
 - Load the raw file
 - Fit Column and row width and height
