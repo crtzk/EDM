@@ -16,7 +16,7 @@ This task shows the process of data cleaning and preparation using Power Query.
 -  Go to Transform Menu, Extract, Text Before Delimiter
 - Type "(" and click OK
 - Create two new columns: Min Salary and Max Salary  
-   - Select Salary Estimate column → Add Column Menu → Column from Examples → From Selections  
+   - Select Salary Estimate column, Add Column Menu, Column from Examples, From Selections  
    - Type the first min salary value and press Enter (all rows will auto-fill)  
    - Rename column to "Min Sal"  
    - Repeat process for Max Salary  
@@ -35,12 +35,12 @@ This task shows the process of data cleaning and preparation using Power Query.
 ### Step 5: Split Location Column  
 - Select the Location column  
 - Add a Custom Column with corrections:  
-   - If Location = "New Jersey" → Assign ", NJ"  
+   - If Location = "New Jersey" then Assign ", NJ"  
    - If Location = "Remote" or "United States" to Assign ", Other"  
-   - If Location = "Texas" → Assign ", TX"  
+   - If Location = "Texas" then Assign ", TX"  
    - If Location = "California" Assign ", CA" 
 - Click OK, then select the new column  
-- Go to Transform → Split Column → By Delimiter (comma ",")  
+- Go to Transform, Split Column, By Delimiter (comma ",")  
 - Click OK  
 - Rename the second split column to "State Abbreviations"  
 - Check and replace incorrect values (e.g., "Anne Rundell" → "MA")  
@@ -58,21 +58,21 @@ This task shows the process of data cleaning and preparation using Power Query.
 - Remove any extra characters or ratings after company names  
 
 ### Step 9: Copy Cleaning Steps as Proof  
-- Go to Home Menu → Click Advanced Editor
+- Go to Home Menu, Click Advanced Editor
 - Copy and save the code in your portfolio  
 
 
 
 ### Step 10: Reshape and Group Data  
 #### Group by Role Type  
-- Duplicate the raw data → Rename it as "Sal By Role Type dup"
+- Duplicate the raw data then rename it as "Sal By Role Type dup"
 - Select only Role Type, Min Salary, and Max Salary columns
 - Change Min and Max Salary type to currency
-- Multiply values by 1000 (Numbers Column → Standard → Multiply → Type 1000)
+- Multiply values by 1000 (Numbers Column, Standard, Multiply, Type 1000)
 - Group rows by Role Type and get the average for Min and Max Salary  
 
 #### Group by Company Size  
-- Create a reference of raw data → Rename it as "Sal By Role Size ref"
+- Create a reference of raw data then rename it as "Sal By Role Size ref"
 -  Select only Size, Min Salary, and Max Salary columns
 -   Change Min and Max Salary type to currency
 -  Multiply values by 1000
@@ -81,12 +81,12 @@ This task shows the process of data cleaning and preparation using Power Query.
 
 ### Step 11: Merge State Mapping  
 - Click Unclean DS Jobs
-- Right-click in the Queries pane → New Query → Open Workbook State Mapping
+- Right-click in the Queries pane, New Query, Open Workbook State Mapping
 - Select the columns and click OK  
 -  Select Uncleaned DS Jobs query
 - Choose the State Abbreviation column in both queries
 -  Click Merge then Click OK
--   Rename the merged column as "State Full Name"
+-  Rename the merged column as "State Full Name"
 -  Remove nulls and blanks
 ### Step 12: Group by State  
 - Create a reference of raw data → Rename it as "Sal By State ref"  
