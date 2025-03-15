@@ -47,29 +47,29 @@ This task shows the process of data cleaning and preparation using Power Query.
 
 ### Step 6: Split Size Column  
 - Create two new columns: MinCompanySize and MaxCompanySize
--  Use the same method as Salary Estimate to split values  
+- Use the same method as Salary Estimate to split values  
 
 ### Step 7: Handle Negative Values  
 - Filter out -1s from the Competitors column
--  Filter out 0s from the Revenues column
--   Remove -1s from the Industry column  
+- Filter out 0s from the Revenues column
+- Remove -1s from the Industry column  
 
 ### Step 8: Clean Company Names  
 - Remove any extra characters or ratings after company names  
 
 ### Step 9: Copy Cleaning Steps as Proof  
 - Go to Home Menu → Click Advanced Editor
--  Copy and save the code in your portfolio  
+- Copy and save the code in your portfolio  
 
 
 
 ### Step 10: Reshape and Group Data  
 #### Group by Role Type  
 - Duplicate the raw data → Rename it as "Sal By Role Type dup"
--  Select only Role Type, Min Salary, and Max Salary columns
--   Change Min and Max Salary type to currency
--     ultiply values by 1000 (Numbers Column → Standard → Multiply → Type 1000)
--  Group rows by Role Type and get the average for Min and Max Salary  
+- Select only Role Type, Min Salary, and Max Salary columns
+- Change Min and Max Salary type to currency
+- Multiply values by 1000 (Numbers Column → Standard → Multiply → Type 1000)
+- Group rows by Role Type and get the average for Min and Max Salary  
 
 #### Group by Company Size  
 - Create a reference of raw data → Rename it as "Sal By Role Size ref"
