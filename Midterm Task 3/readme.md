@@ -13,3 +13,11 @@ This portfolio is contains the process of my Midterm Task 3.
 - Use bar, column, or pie charts to visualize salary trends and job distribution
 - Insert slicers for filtering
 - Add slicers for role type, company size, and state to make the dashboard interactive
+## Screenshots
+-Sal by Role Type (see screenshot)
+
+Sal by Size (see screenshot)
+
+Sal by State (see screenshot)
+
+Dashboard (see screenshot)
