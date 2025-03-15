@@ -3,19 +3,19 @@ This task shows the process of data cleaning and preparation using Power Query.
 ## Step-by-Step Process
 ### Step 1: Download and Load Data  
 - Download the dataset (Uncleaned_DS_jobs.csv)
--  Open Excel
--   Go to Data, New Query, Open File, Text/CSV
--     Click Load and then Edit using Power Query Editor  
+- Open Excel
+- Go to Data, New Query, Open File, Text/CSV
+- Click Load and then Edit using Power Query Editor  
 
 ### Step 2: Duplicate Raw Data  
 - Right-click the dataset in the Queries pane
--  Select Duplicate  
+- Select Duplicate  
 
 ### Step 3: Clean Salary Data  
 - Select the Salary Estimate column
 -  Go to Transform Menu, Extract, Text Before Delimiter
--   Type "(" and click OK
--     reate two new columns: Min Salary and Max Salary  
+- Type "(" and click OK
+- Create two new columns: Min Salary and Max Salary  
    - Select Salary Estimate column → Add Column Menu → Column from Examples → From Selections  
    - Type the first min salary value and press Enter (all rows will auto-fill)  
    - Rename column to "Min Sal"  
@@ -23,8 +23,8 @@ This task shows the process of data cleaning and preparation using Power Query.
 
 ### Step 4: Add Role Type Column  
 - Go to Add Column Menu then Custom Column
--  Rename the column to "Role Type"
--   Use this logic:  
+- Rename the column to "Role Type"
+- Use this logic:  
    - If Job Title contains "Data Scientist" to Assign "Data Scientist"  
    - If Job Title contains "Data Analyst" to Assign "Data Analyst"  
    - If Job Title contains "Data Engineer" to Assign "Data Engineer"  
