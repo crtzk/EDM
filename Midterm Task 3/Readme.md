@@ -27,8 +27,8 @@ For this task I created an interactive Data Science Salary & Job Trends Dashboar
 ### Sal by Role Type:
 ![screenshot](Images/Untitled7_20250423220303.png )
 ### Sal by Size:
-![screenshot](Images/Size.PNG)
+![screenshot](Images/Untitled8_20250423220629.png )
 ### Sal by State:
-![screenshot](Images/State.PNG)
+![screenshot](Images/Untitled9_20250423220712.png)
 ### Dashboard: 
-![screenshot](Images/Dashboard.PNG)
+![screenshot](/Images/Untitled10_20250423220916.png )
