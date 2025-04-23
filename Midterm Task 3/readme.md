@@ -24,9 +24,7 @@ On this part I created an interactive Data Science Salary & Job Trends Dashboard
 - Ensure all required visuals and reports are included
 - The slicers should be functional and interactive
 
-# Screenshots
-
-## Here's the Screenshot of My Output:
+## Screenshots of My Output:
 ### Sal by Role Type:
 ![screenshot](Images/Role%20Type.PNG)
 ### Sal by Size:
