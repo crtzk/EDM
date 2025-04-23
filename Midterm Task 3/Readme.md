@@ -31,4 +31,4 @@ For this task I created an interactive Data Science Salary & Job Trends Dashboar
 ### Sal by State:
 ![screenshot](Images/Untitled9_20250423220712.png)
 ### Dashboard: 
-![screenshot](/Images/Untitled10_20250423220916.png )
+![screenshot](/Images/Untitled10_20250423220916.png)
