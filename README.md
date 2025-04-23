@@ -14,4 +14,6 @@ I'm Khim V. Cortez. I am currently studying in City College of Angeles under the
 
 ## Finals
 
-
+- Finals Lab Task 1: MySql Basics
+- Finals Lab Task 2: Transforming ER Model to Relational Tables
+- Finals Lab Task 3: Table Manipulation
