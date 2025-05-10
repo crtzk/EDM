@@ -31,7 +31,7 @@
 ## Query Statements & Table Structure:
 ### Task 1:
 #### Query:
-![screenshot](Images/TASK1.PNG)
+![screenshot](images/TASK1.PNG)
 #### Table:
 ![screenshot](Images/TASK1TABLE.PNG)
 ### Task 2:
