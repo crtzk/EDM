@@ -1,5 +1,11 @@
-title: EDM Portfolio of Khim Cortez
-show_downloads: true
-remote_theme: pages-themes/merlot@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# Basic site information
+title: "Khim V. Cortez's Portfolio"
+description: "Information Systems Student"
+
+# URL of your GitHub Pages site (replace with your actual URL)
+url: "https://your-github-username.github.io"
+baseurl: "/"
+
+# Social Links (optional)
+social:
+  github: "https://github.com/crtzk"  # Replace with your GitHub link
