@@ -1,122 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your GitHub Portfolio</title>
-  <style>
-    /* Global Styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Background animation */
-    @keyframes moveBackground {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 100% 100%;
-      }
-    }
-
-    /* Moving background */
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://source.unsplash.com/random') repeat;
-      animation: moveBackground 10s linear infinite;
-      z-index: -1;
-    }
-
-    /* Content Container */
-    .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      flex-direction: column;
-      color: white;
-      text-align: center;
-    }
-
-    /* Profile Picture */
-    .profile-picture {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-image: url('https://via.placeholder.com/150');
-      background-size: cover;
-      background-position: center;
-      margin-bottom: 20px;
-    }
-
-    /* Header */
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    /* Subheading */
-    h2 {
-      font-size: 1.5rem;
-      margin: 10px 0;
-    }
-
-    /* Description */
-    p {
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    /* Link Styles */
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: move 2s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(100vw);
+            }
+        }
+        .profile-container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            z-index: 2;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #f0f0f0;
+        }
+        .bio, .education, .projects {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        pre {
+            background-color: #222;
+            padding: 10px;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        a {
+            color: #57a8ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <!-- Starry Background -->
+    <script>
+        // Generate stars for the background
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(star);
+        }
+    </script>
 
-  <!-- Moving Background -->
-  <div class="background"></div>
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <img src="https://github.com/crtzk/EDM/blob/main/Cortez%2C%20Khim%20V..jpeg" alt="Khim V. Cortez" class="profile-img">
+        <div class="bio">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm Khim V. Cortez. I am currently studying at the City College of Angeles under the course of Bachelor of Science in Information System.</p>
+        </div>
+    </div>
 
-  <!-- Main Content -->
-  <div class="content">
-    <!-- Profile Picture Section -->
-    <div class="profile-picture"></div>
+    <!-- Education Section -->
+    <div class="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li><strong>College:</strong> City College of Angeles</li>
+            <li><strong>High School:</strong> Republic Central Colleges</li>
+            <li><strong>Elementary:</strong> Sto. Rosario Elementary School</li>
+        </ul>
+    </div>
 
-    <!-- Your Name -->
-    <h1>Your Name</h1>
+    <!-- Projects Section -->
+    <div class="projects">
+        <h2 class="section-title">My Projects</h2>
 
-    <!-- Tagline or Description -->
-    <h2>Full Stack Developer | Open Source Enthusiast</h2>
+        <h3>Midterms</h3>
+        <ul>
+            <li><strong>Midterm Lab Task 1:</strong> <a href="https://crtzk.github.io/Midterm-Task-1/" target="_blank">Data Cleaning and Preparation using Excel</a></li>
+            <li><strong>Midterm Lab Task 2:</strong> <a href="Midterm%20Task%202" target="_blank">Data Cleaning and Preparation using Power Query</a></li>
+            <li><strong>Midterm Lab Task 3:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Midterm%20Task%203" target="_blank">Creating Pivot Table and Dashboard</a></li>
+        </ul>
 
-    <!-- Short Description/About You -->
-    <p>
-      Hello! I'm a passionate developer with experience in creating web applications using modern technologies.
-      I enjoy learning and contributing to open-source projects. Connect with me on GitHub and let's build something awesome together!
-    </p>
-
-    <!-- GitHub Link -->
-    <p>
-      Check out my work on <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </p>
-  </div>
-
+        <h3>Finals</h3>
+        <ul>
+            <li><strong>Finals Lab Task 1:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%201" target="_blank">MySQL Basics</a></li>
+            <li><strong>Finals Lab Task 2:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%202" target="_blank">Transforming ER Model to Relational Tables</a></li>
+            <li><strong>Finals Lab Task 3:</strong> <a href="https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md" target="_blank">Table Manipulation</a></li>
+            <li><strong>Finals Lab Task 3.1:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1" target="_blank">Using MYSQL Clause</a></li>
+            <li><strong>Finals Lab Task 5:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%205" target="_blank">Using SQL views and Stored Procedures and Stored Functions</a></li>
+        </ul>
+    </div>
 </body>
 </html>
-
