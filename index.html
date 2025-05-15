@@ -3,133 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Your GitHub Portfolio</title>
     <style>
+        /* Basic styling for your portfolio */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
             overflow: hidden;
-            background-color: #000;
-            font-family: Arial, sans-serif;
-            color: white;
+            position: relative;
         }
-        .star {
+
+        /* The moving background */
+        .background {
             position: absolute;
-            width: 2px;
-            height: 2px;
-            background-color: #fff;
-            border-radius: 50%;
-            animation: move 2s linear infinite;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1920x1080') repeat;
+            background-size: cover;
+            animation: moveBackground 20s linear infinite;
         }
-        @keyframes move {
+
+        /* Animation for the moving background */
+        @keyframes moveBackground {
             0% {
-                transform: translateY(0) translateX(0);
+                background-position: 0 0;
             }
             100% {
-                transform: translateY(100vh) translateX(100vw);
+                background-position: 100% 100%;
             }
         }
-        .profile-container {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, 0);
+
+        /* Content styling */
+        .content {
+            position: relative;
+            z-index: 1;
             text-align: center;
-            z-index: 2;
+            color: white;
+            padding-top: 100px;
         }
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
-        .section-title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-top: 20px;
-            color: #f0f0f0;
-        }
-        .bio, .education, .projects {
+
+        header p {
             font-size: 1.2rem;
-            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* About Me Section */
+        .about-me {
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+
+        .about-me h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
-        li {
+
+        .about-me p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .about-me img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Education Section */
+        .education {
+            margin-top: 30px;
+        }
+
+        .education ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education li {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        /* Projects Section */
+        .projects {
+            margin-top: 50px;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .project-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
             margin-bottom: 10px;
         }
-        pre {
-            background-color: #222;
-            padding: 10px;
-            color: #fff;
-            font-size: 1rem;
-            border-radius: 5px;
-        }
-        a {
-            color: #57a8ff;
+
+        .project-item a {
+            color: #f39c12;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- Starry Background -->
-    <script>
-        // Generate stars for the background
-        for (let i = 0; i < 100; i++) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            star.style.left = `${Math.random() * 100}vw`;
-            star.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(star);
-        }
-    </script>
+    <!-- Moving background -->
+    <div class="background"></div>
 
-    <!-- Profile Section -->
-    <div class="profile-container">
-        <img src="https://github.com/crtzk/EDM/blob/main/Cortez%2C%20Khim%20V..jpeg" alt="Khim V. Cortez" class="profile-img">
-        <div class="bio">
-            <h2 class="section-title">About Me</h2>
+    <!-- Portfolio content -->
+    <div class="content">
+        <header>
+            <h1>Khim V. Cortez</h1>
+            <p>Web Developer | Open Source Contributor | Information Systems Student</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <img src="https://github.com/crtzk/EDM/blob/main/Cortez%2C%20Khim%20V..jpeg" alt="Khim V. Cortez" width="150" height="150">
             <p>I'm Khim V. Cortez. I am currently studying at the City College of Angeles under the course of Bachelor of Science in Information System.</p>
-        </div>
-    </div>
+        </section>
 
-    <!-- Education Section -->
-    <div class="education">
-        <h2 class="section-title">Education</h2>
-        <ul>
-            <li><strong>College:</strong> City College of Angeles</li>
-            <li><strong>High School:</strong> Republic Central Colleges</li>
-            <li><strong>Elementary:</strong> Sto. Rosario Elementary School</li>
-        </ul>
-    </div>
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>College:</strong> City College of Angeles</li>
+                <li><strong>High School:</strong> Republic Central Colleges</li>
+                <li><strong>Elementary:</strong> Sto. Rosario Elementary School</li>
+            </ul>
+        </section>
 
-    <!-- Projects Section -->
-    <div class="projects">
-        <h2 class="section-title">My Projects</h2>
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            
+            <!-- Midterms -->
+            <div class="project-item">
+                <h3>Midterms</h3>
+                <ul>
+                    <li><a href="https://crtzk.github.io/Midterm-Task-1/" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+                    <li><a href="Midterm%20Task%202" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Midterm%20Task%203" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+                </ul>
+            </div>
 
-        <h3>Midterms</h3>
-        <ul>
-            <li><strong>Midterm Lab Task 1:</strong> <a href="https://crtzk.github.io/Midterm-Task-1/" target="_blank">Data Cleaning and Preparation using Excel</a></li>
-            <li><strong>Midterm Lab Task 2:</strong> <a href="Midterm%20Task%202" target="_blank">Data Cleaning and Preparation using Power Query</a></li>
-            <li><strong>Midterm Lab Task 3:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Midterm%20Task%203" target="_blank">Creating Pivot Table and Dashboard</a></li>
-        </ul>
-
-        <h3>Finals</h3>
-        <ul>
-            <li><strong>Finals Lab Task 1:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%201" target="_blank">MySQL Basics</a></li>
-            <li><strong>Finals Lab Task 2:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%202" target="_blank">Transforming ER Model to Relational Tables</a></li>
-            <li><strong>Finals Lab Task 3:</strong> <a href="https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md" target="_blank">Table Manipulation</a></li>
-            <li><strong>Finals Lab Task 3.1:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1" target="_blank">Using MYSQL Clause</a></li>
-            <li><strong>Finals Lab Task 5:</strong> <a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%205" target="_blank">Using SQL views and Stored Procedures and Stored Functions</a></li>
-        </ul>
+            <!-- Finals -->
+            <div class="project-item">
+                <h3>Finals</h3>
+                <ul>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%201" target="_blank">Finals Lab Task 1: MySQL Basics</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%202" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1" target="_blank">Finals Lab Task 3.1: Using MYSQL Clause</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%205" target="_blank">Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
 </body>
 </html>
