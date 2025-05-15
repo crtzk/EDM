@@ -3,59 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khim V. Cortez's Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM Portfolio</title>
     <style>
-        /* Body with animation for background color change */
+        /* General body and background setup */
         body {
+            background-color: #121212;
+            background-image: url('https://gifdb.com/images/high/data-circuit-background-ht35fdefmne6n1dv.gif'); /* Replace with a valid image URL */
+            background-size: cover;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
-            animation: changeBackground 10s infinite alternate;
+            overflow-x: hidden;
+            background-position: center;
+            background-attachment: fixed;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
-        /* Animation for color changes */
-        @keyframes changeBackground {
-            0% {
-                background-color: #1e3c72; /* Dark Blue */
-            }
-            25% {
-                background-color: #2a5298; /* Medium Blue */
-            }
-            50% {
-                background-color: #4ca1af; /* Teal Blue */
-            }
-            75% {
-                background-color: #3c8dbc; /* Lighter Blue */
-            }
-            100% {
-                background-color: #6a82fb; /* Light Blue */
-            }
-        }
-
-        /* Content styling */
-        .content {
+        /* Header style */
+        header {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 40px 0;
             text-align: center;
-            color: white;
-            padding-top: 20%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5em;
+            color: #00bcd4; /* Cyan color */
+            text-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
             margin: 0;
+            animation: pulse 1.5s infinite alternate;
         }
 
-        p {
-            font-size: 1.2rem;
-            margin-top: 20px;
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(30, 30, 30, 0.9);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            margin: 0 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 188, 212, 0.5);
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.7);
+        }
+
+        /* Section styling */
+        .content {
+            padding: 50px;
+            z-index: 1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero img {
+            width: 250px;
+            border: 5px solid rgba(0, 188, 212, 1);
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+            transition: transform 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 188, 212, 0.7);
+        }
+
+        /* Section headers */
+        .section h2 {
+            font-size: 2.5em;
+            color: #00bcd4;
+            text-align: center;
+            text-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        /* Box around sections for contrast */
+        .box {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0  0 25px rgba(0, 188, 212, 0.5);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project links inside boxes */
+        .box a {
+            display: block;
+            color: #e0e0e0;
+            background-color: rgba(0, 188, 212, 0.7);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+
+        .box a:hover {
+            background-color: rgba(0, 188, 212, 1);
+            color: #121212;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(30, 30, 30, 0.9);
+            color: #00bcd4;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            font-size: 1.1em;
+            text-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
 
-    <div class="content">
-        <h1>Khim V. Cortez</h1>
-        <p>Web Developer | Open Source Contributor | Information Systems Student</p>
+<header>
+    <h1>EDM Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="box">
+            <h2>Welcome to My EDM Tasks Portfolio💾 </h2>
+            <div class="home-content">
+            <p>This Portfolio Contain all of my documents in EDM.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="box">
+            <h2>About Me 🙋‍♂️</h2>
+             <div class="about-content">
+            <img src="https://github.com/user-attachments/assets/dff3da4f-90cd-4ad0-bd46-f4876ae9b835" alt="Khim Cortez">
+            <p>I am John Paul Recapor  currently studying in City College Of Angeles with a course of Bachelor of Science in Information System. And also currently working in Jollibee Cutcut Frienship :) 
+.</p>
+        </div>
+    </section>
+    <style>
+    .about-content {
+        text-align: center; /* Centers the content inside the div */
+    }
+    .about-content img {
+        display: block; /* Makes the image a block element */
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+</style>
+
+<!-- Other Sections with Icons -->
+<section class="section" id="Education">
+    <div class="box">
+        <h2>Education 👨‍🎓 </h2>
+        <p>College: Currently Studying at City College of Angeles</p>
+        <p>High School:  RRepublic Central Colleges</p>
+        <p>Elementary: Sto Rosario Elementary School</p>
     </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="box">
+            <h2>My Projects in MidTerms 🛠️</h2>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Midterm" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using EXCEL</a>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Midterm%20Task%202" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Midterm%20Task%203" target="_blank">Midterm Lab Task 3: Creating PIVOT TABLE and DASHBOARD</a>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section class="section" id="finals">
+        <div class="box">
+            <h2>My Projects in Finals 🛠️</h2>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Final%20Task%201" target="_blank">Finals Lab Task 1:: Data Cleaning and Preparation using EXCEL</a>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Final%20Task%202" target="_blank">Finals Lab Task 2: Data Cleaning and Preparation using Power Query</a>
+            <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Final%20Task%203" target="_blank">Finals Lab Task 3: Creating PIVOT TABLE and DASHBOARD</a>
+             <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Final%20Task%203-1" target="_blank">Finals Lab Task 3-1: Creating PIVOT TABLE and DASHBOARD</a>
+             <a href="https://github.com/jrecapor/EDM-John-Paul/tree/main/Final%20Task%205" target="_blank">Finals Lab Task 5: Creating PIVOT TABLE and DASHBOARD</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="box">
+            <h2>Contact Me 📞</h2>
+            <p>If you'd like to get in touch, feel free to reach out at  
+            <a href="jrecapor24-0115@cca.edu.ph">jrecapor24-0115@cca.edu.ph</a></p>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Khim Cortez. All rights reserved.</p>
+    <a href="https://github.com/jrecapor/EDM-John-Paul" target="_blank" style="color: #00bcd4;">View This GitHub</a>
+</footer>
 
 </body>
 </html>
