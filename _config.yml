@@ -1,9 +1,0 @@
-# Site settings
-title: "Khim V. Cortez's Portfolio"
-description: "Information Systems Student"
-baseurl: ""  # Leave this empty if the site is hosted at the root of the domain (e.g., https://username.github.io)
-url: "https://username.github.io"  # Change to your actual GitHub Pages URL
-
-# Theme settings (use a minimal theme or a custom one)
-theme: minimal
-
