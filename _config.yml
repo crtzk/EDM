@@ -1,13 +1,15 @@
-# Prevent Jekyll from processing files (good for plain HTML sites)
-# and avoid unnecessary build issues
+# _config.yml for GitHub Pages (EDM Portfolio)
+
+# Disable Jekyll processing (you are using only HTML/CSS)
+# You still need to create a `.nojekyll` file in your repo root
 exclude:
   - README.md
   - LICENSE
   - _config.yml
 
-# Set the base URL if you're hosting in a subdirectory (optional)
-# baseurl: "/EDM"  # uncomment if your GitHub repo is named EDM
+# If your site is published at https://crtzk.github.io/EDM/
+baseurl: "/EDM"
 
-# Site info (optional metadata)
+# Optional metadata
 title: "Khim V. Cortez Portfolio"
-description: "Student Portfolio for EDM Course at City College of Angeles"
+description: "Student portfolio for EDM subject at City College of Angeles"
