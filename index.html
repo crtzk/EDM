@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Portfolio</title>
+    <title>Khim V. Cortez's Portfolio</title>
     <style>
-        /* Basic styling for your portfolio */
-        body {
-            font-family: Arial, sans-serif;
+        /* Global reset */
+        body, html {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            position: relative;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
         }
 
-        /* The blue moving background */
+        /* Blue Gradient Moving Background */
         .background {
             position: absolute;
             top: 0;
@@ -24,9 +23,9 @@
             background: linear-gradient(45deg, #1e3c72, #2a5298, #4ca1af);
             background-size: 400% 400%;
             animation: moveBackground 30s ease infinite;
+            z-index: -1;
         }
 
-        /* Animation for the moving background */
         @keyframes moveBackground {
             0% {
                 background-position: 0 0;
@@ -39,35 +38,40 @@
             }
         }
 
-        /* Content styling */
-        .content {
-            position: relative;
-            z-index: 1;
+        /* Content Section */
+        .container {
             text-align: center;
+            padding: 50px;
             color: white;
-            padding-top: 100px;
+            z-index: 1;
         }
 
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
         }
 
-        header p {
+        p {
             font-size: 1.2rem;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         /* About Me Section */
         .about-me {
-            margin-top: 50px;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
             text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-top: 40px;
+        }
+
+        .about-me img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
         }
 
         .about-me h2 {
@@ -78,26 +82,6 @@
         .about-me p {
             font-size: 1rem;
             line-height: 1.6;
-        }
-
-        .about-me img {
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        /* Education Section */
-        .education {
-            margin-top: 30px;
-        }
-
-        .education ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .education li {
-            font-size: 1rem;
-            margin: 5px 0;
         }
 
         /* Projects Section */
@@ -115,11 +99,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-        }
-
-        .project-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            text-align: left;
         }
 
         .project-item a {
@@ -127,14 +107,43 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        .project-item a:hover {
+            color: #ffbd00;
+        }
+
+        /* Education Section */
+        .education {
+            margin-top: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .education h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .education li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <!-- Moving background -->
+
+    <!-- Blue Gradient Moving Background -->
     <div class="background"></div>
 
-    <!-- Portfolio content -->
-    <div class="content">
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Portfolio Header -->
         <header>
             <h1>Khim V. Cortez</h1>
             <p>Web Developer | Open Source Contributor | Information Systems Student</p>
@@ -143,8 +152,33 @@
         <!-- About Me Section -->
         <section class="about-me">
             <h2>About Me</h2>
-            <img src="https://github.com/crtzk/EDM/blob/main/Cortez%2C%20Khim%20V..jpeg" alt="Khim V. Cortez" width="150" height="150">
-            <p>I'm Khim V. Cortez. I am currently studying at the City College of Angeles under the course of Bachelor of Science in Information System.</p>
+            <img src="https://github.com/crtzk/EDM/blob/main/Cortez%2C%20Khim%20V..jpeg" alt="Khim V. Cortez">
+            <p>I'm Khim V. Cortez. I am currently studying at the City College of Angeles under the course of Bachelor of Science in Information System. I am passionate about technology and its potential to solve real-world problems. I love working on projects that allow me to apply my knowledge of databases and web development.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project-item">
+                <h3>Midterm Lab Tasks</h3>
+                <ul>
+                    <li><a href="https://crtzk.github.io/Midterm-Task-1/" target="_blank">Data Cleaning and Preparation using Excel</a></li>
+                    <li><a href="Midterm%20Task%202" target="_blank">Data Cleaning and Preparation using Power Query</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Midterm%20Task%203" target="_blank">Creating Pivot Table and Dashboard</a></li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Final Lab Tasks</h3>
+                <ul>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%201" target="_blank">MySQL Basics</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%202" target="_blank">Transforming ER Model to Relational Tables</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md" target="_blank">Table Manipulation</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1" target="_blank">Using MySQL Clauses</a></li>
+                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%205" target="_blank">Using SQL Views and Stored Procedures</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- Education Section -->
@@ -156,33 +190,7 @@
                 <li><strong>Elementary:</strong> Sto. Rosario Elementary School</li>
             </ul>
         </section>
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>My Projects</h2>
-            
-            <!-- Midterms -->
-            <div class="project-item">
-                <h3>Midterms</h3>
-                <ul>
-                    <li><a href="https://crtzk.github.io/Midterm-Task-1/" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
-                    <li><a href="Midterm%20Task%202" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
-                    <li><a href="https://github.com/crtzk/EDM/tree/main/Midterm%20Task%203" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
-                </ul>
-            </div>
-
-            <!-- Finals -->
-            <div class="project-item">
-                <h3>Finals</h3>
-                <ul>
-                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%201" target="_blank">Finals Lab Task 1: MySQL Basics</a></li>
-                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%202" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
-                    <li><a href="https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
-                    <li><a href="https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1" target="_blank">Finals Lab Task 3.1: Using MYSQL Clause</a></li>
-                    <li><a href="https://github.com/crtzk/EDM/tree/main/Finals%20Task%205" target="_blank">Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions</a></li>
-                </ul>
-            </div>
-        </section>
     </div>
+    
 </body>
 </html>
