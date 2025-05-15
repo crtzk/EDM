@@ -1,11 +1,9 @@
-title: "Khim V. Cortez Portfolio"
-description: "A portfolio showcasing the work and projects of Khim V. Cortez, a student in Bachelor of Science in Information Systems."
-baseurl: "/"
-url: "https://your-username.github.io"  # Replace with your GitHub username and repo URL (e.g., https://crtzk.github.io)
+# Site settings
+title: "Khim V. Cortez's Portfolio"
+description: "Information Systems Student"
+baseurl: ""  # Leave this empty if the site is hosted at the root of the domain (e.g., https://username.github.io)
+url: "https://username.github.io"  # Change to your actual GitHub Pages URL
 
-author:
-  name: "Khim V. Cortez"
-  email: "kcortez24-0173@cca.edu.ph"  # Replace with your email (optional)
-  url: "https://github.com/crtzk"  # Replace with your GitHub profile URL
+# Theme settings (use a minimal theme or a custom one)
+theme: minimal
 
-theme: "minimal"  # You can replace this with your preferred theme (this is optional)
