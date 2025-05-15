@@ -14,16 +14,16 @@
             position: relative;
         }
 
-        /* The moving background */
+        /* The blue moving background */
         .background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://source.unsplash.com/random/1920x1080') repeat;
-            background-size: cover;
-            animation: moveBackground 30s linear infinite;
+            background: linear-gradient(45deg, #1e3c72, #2a5298, #4ca1af);
+            background-size: 400% 400%;
+            animation: moveBackground 30s ease infinite;
         }
 
         /* Animation for the moving background */
@@ -31,8 +31,11 @@
             0% {
                 background-position: 0 0;
             }
-            100% {
+            50% {
                 background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0 0;
             }
         }
 
@@ -134,7 +137,7 @@
     <div class="content">
         <header>
             <h1>Khim V. Cortez</h1>
-            <p>Information Systems Student</p>
+            <p>Web Developer | Open Source Contributor | Information Systems Student</p>
         </header>
 
         <!-- About Me Section -->
