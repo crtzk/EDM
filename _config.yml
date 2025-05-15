@@ -1,17 +1,20 @@
-# _config.yml for GitHub Pages - EDM Portfolio by Khim V. Cortez
+# Ensure no markdown processing
+markdown: kramdown
 
-# Prevent Jekyll from interfering with plain HTML files
-exclude:
-  - README.md
-  - LICENSE
-  - _config.yml
-
-# Set this if your repo is not a user/organization site
-baseurl: "/EDM"  # This is needed for correct relative paths if you use subfolders
-
-# Optional metadata (not used by your site, but good for documentation)
+# Site settings
 title: "Khim V. Cortez Portfolio"
 description: "A student portfolio for EDM subject at City College of Angeles"
 
-# Ensure no markdown processing
+url: "https://your-username.github.io"  # Use your GitHub Pages URL
+
+# Author info
+author:
+  name: "Khim Cortez"
+  email: "kcortez24-0173@cca.edu.ph"
+  url: "https://github.com/crtz"
+
+# Build settings
 markdown: kramdown
+
+# Theme options (optional if you're using a theme)
+theme: jekyll-theme-cayman  # Example: Change this if you want a theme
