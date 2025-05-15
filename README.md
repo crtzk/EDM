@@ -20,3 +20,4 @@ I'm Khim V. Cortez. I am currently studying in City College of Angeles under the
 - Finals Lab Task 2: [Transforming ER Model to Relational Tables](https://github.com/crtzk/EDM/tree/main/Finals%20Task%202)
 - Finals Lab Task 3: [Table Manipulation](https://github.com/crtzk/EDM/blob/main/Finals%20Task%203/Readme.md)
 - Finals Lab Task 3.1:[Using MYSQL Clause](https://github.com/crtzk/EDM/tree/main/Final%20Task%203-1)
+    - Finals Lab Task 5: [Using SQL views and Stored Procedures and Stored Functions](https://github.com/crtzk/EDM/tree/main/Finals%20Task%205)
